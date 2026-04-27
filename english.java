@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex03{
+public class English{
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -17,64 +17,128 @@ public class Ex03{
 
             switch (opcao) {
                 case 1:
+                    System.out.println("\n== Apenas palavras de animais ==");
                     System.out.println("Digite uma palavra em inglês: ");
                     String palavra = sc.nextLine();
-                    if(palavra.equals("dog")){
-                        System.out.println("cachorro");
-                    }else if(palavra.equals("cat")){
-                        System.out.println("gato");
-                    }else if(palavra.equals("horse")){
-                        System.out.println("cavalo");
-                    }else if(palavra.equals("lion")){
-                        System.out.println("leão");
-                    }else if(palavra.equals("duck")){
-                        System.out.println("pato");
-                    }else if(palavra.equals("elephant")){
-                        System.out.println("elefante");
-                    }else if(palavra.equals("giraffe")){
-                        System.out.println("girafa");
-                    }else if(palavra.equals("monkey")){
-                        System.out.println("macaco");
+                    if(palavra.equals("Dog")){
+                        System.out.println("Cachorro");
+                    }else if(palavra.equals("Cat")){
+                        System.out.println("Gato");
+                    }else if(palavra.equals("Horse")){
+                        System.out.println("Cavalo");
+                    }else if(palavra.equals("Lion")){
+                        System.out.println("Leão");
+                    }else if(palavra.equals("Duck")){
+                        System.out.println("Pato");
+                    }else if(palavra.equals("Elephant")){
+                        System.out.println("Elefante");
+                    }else if(palavra.equals("Giraffe")){
+                        System.out.println("Girafa");
+                    }else if(palavra.equals("Monkey")){
+                        System.out.println("Macaco");
                     }else if(palavra.equals("Tiger")){
-                        System.out.println("tigre");
-                    }else if(palavra.equals("bear")){
-                        System.out.println("urso");
-                    }else if(palavra.equals("wolf")){
-                        System.out.println("lobo");
-                    }else if(palavra.equals("fox")){
-                        System.out.println("raposa");
-                    }else if(palavra.equals("deer")){
-                        System.out.println("veado");
-                    }else if(palavra.equals("rabbit")){
-                        System.out.println("coelho");
-                    }else if(palavra.equals("kangaroo")){
-                        System.out.println("canguru");
-                    }else if(palavra.equals("leopard")){
-                        System.out.println("leopardo");
-                    }else if(palavra.equals("crocodile")){
-                        System.out.println("crocodilo");
-                    }else if(palavra.equals("alligator")){
-                        System.out.println("jacaré");
-                    }else if(palavra.equals("eagle")){
-                        System.out.println("águia");
-                    }else if(palavra.equals("owl")){
-                        System.out.println("coruja");
-                    }else if(palavra.equals("penguin")){
-                        System.out.println("pinguim");
-                    }else if(palavra.equals("shark")){
-                        System.out.println("tubarao");
-                    }else if(palavra.equals("whale")){
-                        System.out.println("baleia");
+                        System.out.println("Tigre");
+                    }else if(palavra.equals("Bear")){
+                        System.out.println("Urso");
+                    }else if(palavra.equals("Wolf")){
+                        System.out.println("Lobo");
+                    }else if(palavra.equals("Fox")){
+                        System.out.println("Raposa");
+                    }else if(palavra.equals("Deer")){
+                        System.out.println("Veado");
+                    }else if(palavra.equals("Rabbit")){
+                        System.out.println("Coelho");
+                    }else if(palavra.equals("Kangaroo")){
+                        System.out.println("Canguru");
+                    }else if(palavra.equals("Leopard")){
+                        System.out.println("Leopardo");
+                    }else if(palavra.equals("Crocodile")){
+                        System.out.println("Crocodilo");
+                    }else if(palavra.equals("Alligator")){
+                        System.out.println("Jacaré");
+                    }else if(palavra.equals("Eagle")){
+                        System.out.println("Águia");
+                    }else if(palavra.equals("Owl")){
+                        System.out.println("Coruja");
+                    }else if(palavra.equals("Penguin")){
+                        System.out.println("Pinguim");
+                    }else if(palavra.equals("Shark")){
+                        System.out.println("Tubarao");
+                    }else if(palavra.equals("Whale")){
+                        System.out.println("Baleia");
                     }else{
                         System.out.println("opção inválida");
                         System.out.println("Invalid option");
                     }
                     break;
                 case 2:
-                    quiz(sc);
+                    System.out.println("== Qual é a tradução de 'House'? ==");
+                    System.out.println("1 - | Casa");
+                    System.out.println("2 - | Carro");
+                    System.out.println("3 - | Comida");
+
+                    int resposta = sc.nextInt();
+
+                    if(resposta == 1){
+                        System.out.println("Correto");
+                    }else{
+                        System.out.println("Errado!");
+                    }
+
+                    System.out.println("== Qual é a tradução de 'Moon'? ==");
+                    System.out.println("1 - | Sol");
+                    System.out.println("2 - | Marte");
+                    System.out.println("3 - | Lua");
+
+                    int resposta02 = sc.nextInt();
+
+                    if(resposta02 == 3){
+                        System.out.println("Correto!");
+                    }else{
+                        System.out.println("Errado!");
+                    }
+
+                    System.out.println("== Qual é a tradução de 'Apple'? ==");
+                    System.out.println("1 - | Banana");
+                    System.out.println("2 - | Carne");
+                    System.out.println("3 - | Maça");
+
+                    int resposta03 = sc.nextInt();
+
+                    if(resposta03 == 3){
+                        System.out.println("Correto!");
+                    }else{
+                        System.out.println("Errado!");
+                    }
+
+                    System.out.println("== Qual é a tradução de 'Eat'? ==");
+                    System.out.println("1 - | Comida");
+                    System.out.println("2 - | Comer");
+                    System.out.println("3 - | Correr");
+
+                    int resposta04 = sc.nextInt();
+
+                    if(resposta04 == 2){
+                        System.out.println("Correto!");
+                    }else{
+                        System.out.println("Errado");
+                    }
+
+                    System.out.println("== Qual é a tradução 'Head'? ==");
+                    System.out.println("1 - | Coração");
+                    System.out.println("2 - | Cabeça");
+                    System.out.println("3 - | Pé");
+
+                    int resposta05 = sc.nextInt();
+
+                    if(resposta05 == 2){
+                        System.out.println("Correto!");
+                    }else{
+                        System.out.println("Errado!");
+                    }
                     break;
 
-                case 3:
+                case 0:
                     System.out.println("Encerrando...");
                     break;
 
@@ -83,6 +147,6 @@ public class Ex03{
                     break;
             }
         }
-
+        sc.close();
     }
 }
