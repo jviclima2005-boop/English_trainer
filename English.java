@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex03{
+public class English{
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -71,7 +71,31 @@ public class Ex03{
                     }
                     break;
                 case 2:
-                    quiz(sc);
+                    System.out.println("Qual é a tradução de 'house'?");
+                    System.out.println("1 - casa");
+                    System.out.println("2 - carro");
+                    System.out.println("3 - comida");
+
+                    int resposta = sc.nextInt();
+
+                    if(resposta == 1){
+                        System.out.println("Correto");
+                    }else{
+                        System.out.println("Errado!");
+                    }
+
+                    System.out.println("Qual é a tradução de 'moon'?");
+                    System.out.println("1 - sol");
+                    System.out.println("2 - marte");
+                    System.out.println("3 - lua");
+
+                    int resposta02 = sc.nextInt();
+
+                    if(resposta02 == 3){
+                        System.out.println("Correto!");
+                    }else{
+                        System.out.println("Errado!");
+                    }
                     break;
 
                 case 3:
