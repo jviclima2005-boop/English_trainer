@@ -1,7 +1,6 @@
 # 🧠 English Trainer (Java)
 
-Um sistema simples em Java para treinar inglês diretamente no terminal.
-Ideal para iniciantes que querem praticar lógica de programação enquanto aprendem vocabulário.
+Um sistema em Java para treinar inglês diretamente no terminal, utilizando conceitos fundamentais de programação como funções, estruturas de repetição e controle de fluxo.
 
 ---
 
@@ -9,8 +8,9 @@ Ideal para iniciantes que querem praticar lógica de programação enquanto apre
 
 * 🔤 Tradutor de palavras (inglês → português)
 * 🧠 Quiz interativo de inglês
-* 📊 Sistema de pontuação (acertos)
+* 📊 Sistema de pontuação com feedback imediato
 * 🔁 Menu interativo com repetição
+* 🧩 Código organizado em funções (métodos)
 * 💻 Executado totalmente no terminal
 
 ---
@@ -29,12 +29,12 @@ Ideal para iniciantes que querem praticar lógica de programação enquanto apre
 
 Ao iniciar o programa, o usuário verá um menu:
 
-```
+
 === ENGLISH TRAINER ===
 1 - Traduzir palavra
 2 - Quiz
 0 - Sair
-```
+
 
 ---
 
@@ -45,27 +45,18 @@ Ao iniciar o programa, o usuário verá um menu:
 
 Exemplo:
 
-```
-Input: Dog  
+
+Input: dog
 Output: Cachorro
-```
+
 
 ---
 
 ### 🧠 Quiz
 
 * Perguntas de múltipla escolha
-* O usuário responde digitando o número da opção
-* O sistema informa se acertou ou errou
-
-Exemplo:
-
-```
-== Qual é a tradução de "house"? ==
-1 - | Casa
-2 - | Carro
-3 - | Comida
-```
+* Feedback imediato (certo/errado)
+* Sistema de pontuação ao final
 
 ---
 
@@ -73,31 +64,29 @@ Exemplo:
 
 1. Clone o repositório:
 
-```
-git clone https://github.com/seu-usuario/english-trainer-java.git
-```
+
+git clone https://github.com/jviclima2005-boop/english_trainer.git
+
 
 2. Compile o código:
 
-```
-javac english.java
-```
+
+javac English.java
+
 
 3. Execute:
 
-```
-java english
-```
+
+java English
+
 
 ---
 
 ## 🎯 Objetivo do projeto
 
-Este projeto foi criado com o objetivo de:
-
 * Praticar lógica de programação em Java
 * Aprender estruturas como `while`, `switch` e funções
-* Aplicar programação em um contexto útil (aprendizado de inglês)
+* Aplicar programação em um contexto prático (aprendizado de inglês)
 
 ---
 
@@ -106,12 +95,12 @@ Este projeto foi criado com o objetivo de:
 * [ ] Adicionar mais palavras ao tradutor
 * [ ] Sistema de níveis (fácil, médio, difícil)
 * [ ] Embaralhar perguntas automaticamente
-* [ ] Interface gráfica (futuro)
+* [ ] Interface gráfica (Java + HTML futuramente)
 * [ ] Integração com banco de dados
 
 ---
 
 ## 👨‍💻 Autor
 
-Projeto desenvolvido por Victor Omena 🚀
+Desenvolvido por João Victor 🚀
 
