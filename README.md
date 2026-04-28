@@ -32,7 +32,9 @@ Ao iniciar o programa, o usuário verá um menu:
 
 === ENGLISH TRAINER ===
 1 - Traduzir palavra
+
 2 - Quiz
+
 0 - Sair
 
 
@@ -102,5 +104,5 @@ java English
 
 ## 👨‍💻 Autor
 
-Desenvolvido por João Victor 🚀
+Desenvolvido por Victor Omena 🚀
 
