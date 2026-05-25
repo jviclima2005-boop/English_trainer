@@ -7,10 +7,10 @@ public class English{
         int opcao = 1;
         while(opcao != 0){
             System.out.println("=== ENGLISH TRAINER ===");
-            System.out.println("| 1 - Traduzir palavra |");
-            System.out.println("| 2 - Quiz             |");
-            System.out.println("| 0 - Sair             |");
-            System.out.println("========================");
+            System.out.println("| 1 - EXPANDIR VOCABULARIO |");
+            System.out.println("| 2 - Quiz                 |");
+            System.out.println("| 0 - Sair                 |");
+            System.out.println("===========================");
             System.out.print("  Escolha:");
             opcao = sc.nextInt();
             sc.nextLine(); // limpar buffer
@@ -34,62 +34,43 @@ public class English{
     }
 
 
-            public static void traduzir(Scanner sc){
-                System.out.println("=== TRADUZIR NOME DE ANIMAIS ==");
-                System.out.println("Digite uma palavra em inglês:");
-                String palavra = sc.nextLine().toLowerCase();
 
-                switch (palavra) {
-                    case "dog":
-                        System.out.println("Cachorro");
-                        break;
-                    case "cat":
-                        System.out.println("Gato");
-                        break;
-                    case "tiger":
-                        System.out.println("Tigre");
-                        break;
-                    case "elephant":
-                        System.out.println("Elefante");
-                        break;
-                    case "duck":
-                        System.out.println("Pato");
-                        break;
-                    case "fox":
-                        System.out.println("Raposa");
-                        break;
-                    case "shark":
-                        System.out.println("Tubarão");
-                        break;
-                    case "lion":
-                        System.out.println("Leão");
-                        break;
-                    case "Kangaroo":
-                        System.out.println("Canguru");
-                        break;
-                    case "bird":
-                        System.out.println("Pássaros");
-                        break;
-                    case "bear":
-                        System.out.println("Urso");
-                        break;
-                    case "snake":
-                        System.out.println("Cobra");
-                        break;
-                    case "frog":
-                        System.out.println("Sapo");
-                        break;
-                    case "whale":
-                        System.out.println("Baleia");
-                        break;
-                    case "eagle":
-                        System.out.println("Águia");
-                        break;
-                    default:
-                        System.out.println("Opção inválida");
-                        break;
+            public static void traduzir(Scanner sc){
+
+                int opcao = 1;
+
+                String [] inglesAnimias = {"lion","dog","duck","horse","cat"};
+                String [] portuguesAnimias = {"leão","cachorro","pato","cavalo","gato"};
+
+                String [] inglesObjeto = {"calculator","charger","fan","curtain","bottle"};
+                String [] portuguesObjetos = {"calculadora","carregador","ventilador","cortina","bottle"};
+
+                System.out.println("== EXPANDINDO VOCABULARIO EM INGLêS ==");
+                while(opcao != 0){
+                    System.out.println("== MENU ==");
+                    System.out.println("1 - nome de animais");
+                    System.out.println("2 - nome de objetos");
+                    System.out.println("0 - encerrar");
+                    System.out.print("escolha: ");
+                    opcao = sc.nextInt();
+
+                    if(opcao ==1){
+                        for(int i = 0; i < portuguesAnimias.length; i++){
+                        System.out.println(portuguesAnimias[i] + " = " + inglesAnimias[i]);
+                        }
+                    }
+                
+                    if(opcao == 2){
+                        for(int i = 0; i < portuguesObjetos.length; i++){
+                      System.out.println(portuguesObjetos[i] + " = " + inglesObjeto[i]);
+                        }
+                    }
+                    if(opcao == 0){
+                        System.out.println("encerrando...");
+                    }
                 }
             }
+
 
             public static void quiz(Scanner sc){
                 int pontos = 0;
@@ -139,5 +120,6 @@ public class English{
 
                 //resultado final 
                 System.out.println("Seus ponto: "+ pontos + "/3");
-    }
+    
+}
 }
